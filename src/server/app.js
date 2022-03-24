@@ -1,8 +1,8 @@
 'use strict';
 
 const express = require('express');
-const foodRouter = require('./routes/food.js');
-const clothesRouter = require('./routes/clothes.js');
+const foodRouter = require('../routes/food.js');
+const clothesRouter = require('../routes/clothes.js');
 
 const app = express();
 
@@ -15,7 +15,7 @@ module.exports = {
   app,
   start: (PORT) => {
     app.listen(PORT, () => {
-      console.log('App is running on port', PORT);
+      console.log('App is running on port: ', PORT);
     });
   },
 };
